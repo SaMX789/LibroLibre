@@ -1,0 +1,15 @@
+.barra-superior { height: 200px; background-color: #1b4332; }
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; 
+}

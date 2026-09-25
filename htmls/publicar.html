@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar material — LibroLibre</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="barra-superior d-flex align-items-center px-4">
+        <img src="../img/BanerSimple.jpg" alt="Logo" height="120">
+
+        <div class="input-group ms-4" style="max-width: 500px;">
+            <input type="text" class="form-control" placeholder="Buscar productos, artículos y más...">
+        </div>
+
+        <ul class="navbar-nav flex-row gap-4 ms-4 mb-0">
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex align-items-center gap-1" href="ejemplo.html">
+                    <i class="bi bi-house-door"></i> Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex align-items-center gap-1" href="#">
+                    <i class="bi bi-journal-bookmark"></i> Catálogo Escolar
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex align-items-center gap-1" href="publicar.html">
+                    <i class="bi bi-plus-circle"></i> Publicar Material
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex align-items-center gap-1" href="#">
+                    <i class="bi bi-bag-check"></i> Mis Tratos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white d-flex align-items-center gap-1" href="#">
+                    <i class="bi bi-person-circle"></i> Mi Perfil
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="container-fluid px-4 py-4">
+
+        <!-- Encabezado -->
+        <p class="fw-bold small mb-1" style="color:#52b788; letter-spacing:.5px;">PUBLICACIÓN COMUNITARIA</p>
+        <h2 class="fw-bold mb-4" style="color:#1b4332;">Comparte útiles o libros escolares</h2>
+
+        <!-- Barra de progreso -->
+        <div class="progress mb-2" style="height:6px;">
+            <div class="progress-bar" style="width:25%; background-color:#1b4332;"></div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-4 flex-wrap gap-2">
+            <div class="d-flex align-items-center gap-2">
+                <span class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold"
+                      style="width:28px; height:28px; background-color:#1b4332; font-size:.85rem;">1</span>
+                <span class="small fw-semibold" style="color:#1b4332;">Datos del artículo</span>
+            </div>
+            <div class="d-flex align-items-center gap-2 text-muted">
+                <span class="d-flex align-items-center justify-content-center rounded-circle border fw-bold"
+                      style="width:28px; height:28px; font-size:.85rem;">2</span>
+                <span class="small">Ubicación y Escuela</span>
+            </div>
+            <div class="d-flex align-items-center gap-2 text-muted">
+                <span class="d-flex align-items-center justify-content-center rounded-circle border fw-bold"
+                      style="width:28px; height:28px; font-size:.85rem;">3</span>
+                <span class="small">Tipo de oferta</span>
+            </div>
+            <div class="d-flex align-items-center gap-2 text-muted">
+                <span class="d-flex align-items-center justify-content-center rounded-circle border fw-bold"
+                      style="width:28px; height:28px; font-size:.85rem;">4</span>
+                <span class="small">Punto de entrega</span>
+            </div>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Columna izquierda: formulario -->
+            <div class="col-lg-8">
+
+                <!-- Paso 1 -->
+                <div class="card border-0 shadow-sm p-4">
+
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold"
+                                  style="width:26px; height:26px; background-color:#1b4332; font-size:.8rem;">1</span>
+                            <div>
+                                <h6 class="fw-bold mb-0">¿Qué material vas a compartir?</h6>
+                                <p class="text-muted small mb-0">Describe el artículo para que las familias de la comunidad lo identifiquen rápidamente.</p>
+                            </div>
+                        </div>
+                        <span class="badge rounded-pill" style="background-color:#e7e8ea; color:#555;">Obligatorio</span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-semibold">Título del artículo *</label>
+                        <input type="text" class="form-control" placeholder="Ej. Libros xd">
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Categoría</label>
+                            <select class="form-select">
+                                <option>Libros de texto</option>
+                                <option>Uniformes</option>
+                                <option>Cuadernos y útiles</option>
+                                <option>Mochilas</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold d-block">Nivel escolar al que corresponde</label>
+                            <div class="d-flex flex-wrap gap-3 mt-2">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nivel" id="primaria">
+                                    <label class="form-check-label small" for="primaria">Primaria</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nivel" id="secundaria">
+                                    <label class="form-check-label small" for="secundaria">Secundaria</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nivel" id="prepa" checked>
+                                    <label class="form-check-label small" for="prepa">Preparatoria</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="nivel" id="universidad">
+                                    <label class="form-check-label small" for="universidad">Universidad / Normal</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-semibold d-block">Estado físico del material</label>
+                        <div class="d-flex flex-wrap gap-3 mt-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estado" id="nuevo">
+                                <label class="form-check-label small" for="nuevo">Nuevo / Sin usar</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estado" id="muybuen" checked>
+                                <label class="form-check-label small" for="muybuen">Muy buen estado</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estado" id="buen">
+                                <label class="form-check-label small" for="buen">Buen estado</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="estado" id="funcional">
+                                <label class="form-check-label small" for="funcional">Funcional</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label small fw-semibold">Descripción honesta</label>
+                        <textarea class="form-control" rows="3" placeholder="Ej. Libro en excelente estado, forrado con plástico transparente..."></textarea>
+                    </div>
+
+                    <div>
+                        <label class="form-label small fw-semibold">Fotografías del material (Recomendado 2 a 4 fotos)</label>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <div class="border rounded-3 overflow-hidden position-relative" style="height:110px;">
+                                    <img src="../img/publicar/libro3.jpg" class="w-100 h-100" style="object-fit:cover;" alt="Foto principal">
+                                    <span class="badge position-absolute bottom-0 start-0 m-1" style="background-color:#1b4332;">Foto principal</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border rounded-3 overflow-hidden position-relative" style="height:110px;">
+                                    <img src="../img/publicar/libro2.jpg" class="w-100 h-100" style="object-fit:cover;" alt="Páginas interiores">
+                                    <span class="badge position-absolute bottom-0 start-0 m-1 bg-secondary">Páginas interiores</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="border rounded-3 d-flex flex-column align-items-center justify-content-center text-muted"
+                                     style="height:110px; background-color:#f7f7f7; cursor:pointer;">
+                                    <i class="bi bi-camera fs-4"></i>
+                                    <span class="small mt-1">Agregar foto</span>
+                                    <span class="small text-muted" style="font-size:.7rem;">Toma foto o sube archivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="card border-0 shadow-sm p-4 mt-4">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold"
+                              style="width:26px; height:26px; background-color:#1b4332; font-size:.8rem;">2</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Ubicación y Comunidad Escolar</h6>
+                            <p class="text-muted small mb-0">Conecta con familias de tu misma zona para facilitar el intercambio sin traslados largos.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Municipio / Comisaría</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white"><i class="bi bi-geo-alt" style="color:#52b788;"></i></span>
+                                <select class="form-select">
+                                    <option>Ticul (Cabecera Municipal)</option>
+                                    <option>Yotholín</option>
+                                    <option>Pustunich</option>
+                                    <option>Oxkutzcab</option>
+                                    <option>Dzan</option>
+                                    <option>Sacalum</option>
+                                    <option>Santa Elena</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label small fw-semibold">Colonia o Barrio de referencia</label>
+                            <input type="text" class="form-control" placeholder="Ej. Barrio de San Enrique (cerca de la capilla)">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="form-label small fw-semibold">Escuela asociada <span class="text-muted fw-normal">(Opcional pero muy útil)</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-mortarboard" style="color:#52b788;"></i></span>
+                            <input type="text" class="form-control" placeholder="Ej. CBTIS 120 (Ticul)">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="card border-0 shadow-sm p-4 mt-4">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold"
+                              style="width:26px; height:26px; background-color:#1b4332; font-size:.8rem;">3</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Modalidad de Intercambio</h6>
+                            <p class="text-muted small mb-0">Elige cómo deseas compartir este artículo escolar solidario.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-3">
+
+                        <!-- Opción: Donación -->
+                        <div class="col-md-4">
+                            <label class="w-100" style="cursor:pointer;">
+                                <input type="radio" name="modalidad" class="d-none" id="modDonacion">
+                                <div class="border rounded-3 p-3 h-100">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                                             style="width:36px; height:36px; background-color:#fdeeda;">
+                                            <i class="bi bi-gift" style="color:#e08a2f;"></i>
+                                        </div>
+                                        <i class="bi bi-circle text-muted"></i>
+                                    </div>
+                                    <h6 class="fw-bold small mb-1">Donación 100% Gratuita</h6>
+                                    <p class="text-muted small mb-0">Regalo directo a un alumno o familia que lo necesite sin costo alguno.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Opción: Trueque (seleccionada por defecto) -->
+                        <div class="col-md-4">
+                            <label class="w-100" style="cursor:pointer;">
+                                <input type="radio" name="modalidad" class="d-none" id="modTrueque" checked>
+                                <div class="border rounded-3 p-3 h-100" style="border-color:#52b788 !important; background-color:#eefaf3;">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                                             style="width:36px; height:36px; background-color:#d7f2e3;">
+                                            <i class="bi bi-arrow-left-right" style="color:#1b4332;"></i>
+                                        </div>
+                                        <i class="bi bi-check-circle-fill" style="color:#52b788;"></i>
+                                    </div>
+                                    <h6 class="fw-bold small mb-1">Trueque Comunitario</h6>
+                                    <p class="text-muted small mb-0">Intercámbialo por otro material educativo que necesite tu familia este ciclo.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                        <!-- Opción: Venta -->
+                        <div class="col-md-4">
+                            <label class="w-100" style="cursor:pointer;">
+                                <input type="radio" name="modalidad" class="d-none" id="modVenta">
+                                <div class="border rounded-3 p-3 h-100">
+                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                        <div class="d-flex align-items-center justify-content-center rounded-circle"
+                                             style="width:36px; height:36px; background-color:#fbe6e2;">
+                                            <i class="bi bi-cash-coin" style="color:#e76f51;"></i>
+                                        </div>
+                                        <i class="bi bi-circle text-muted"></i>
+                                    </div>
+                                    <h6 class="fw-bold small mb-1">Venta a Bajo Costo</h6>
+                                    <p class="text-muted small mb-0">Precio simbólico y accesible para recuperar algo del gasto familiar escolar.</p>
+                                </div>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <!-- Campo condicional: solo aplica si se elige Trueque -->
+                    <div class="border-top pt-3" id="campoTrueque">
+                        <label class="form-label small fw-semibold">
+                            <i class="bi bi-arrow-left-right me-1"></i>¿Qué material buscas a cambio de este libro?
+                        </label>
+                        <input type="text" class="form-control mb-1" placeholder="Ej. Libro de Literatura II o paquete de libretas profesionales de cuadro grande">
+                        <p class="text-muted small mb-0" style="font-size:.75rem;">Sé específico con la materia, grado escolar o talla requerida.</p>
+                    </div>
+
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="card border-0 shadow-sm p-4 mt-4">
+
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="d-flex align-items-center justify-content-center rounded-circle text-white fw-bold"
+                              style="width:26px; height:26px; background-color:#1b4332; font-size:.8rem;">4</span>
+                        <div>
+                            <h6 class="fw-bold mb-0">Punto de Entrega Comunitario</h6>
+                            <p class="text-muted small mb-0">Selecciona un lugar seguro y visible en Ticul o alrededores para entregar el material.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-2 mb-3">
+
+                        <label class="w-100" style="cursor:pointer;">
+                            <input type="radio" name="puntoEntrega" class="d-none" id="puntoPlaza" checked>
+                            <div class="border rounded-3 p-3 d-flex align-items-start gap-2" style="border-color:#52b788 !important; background-color:#eefaf3;">
+                                <i class="bi bi-check-circle-fill mt-1" style="color:#52b788;"></i>
+                                <div>
+                                    <div class="d-flex align-items-center gap-2 flex-wrap">
+                                        <span class="fw-semibold small">Plaza Principal de Ticul</span>
+                                        <span class="badge rounded-pill" style="background-color:#52b788;">Punto Seguro Verificado</span>
+                                    </div>
+                                    <p class="text-muted small mb-0">Frente al Palacio Municipal / Letras turísticas de Ticul. Zona iluminada y con vigilancia.</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="w-100" style="cursor:pointer;">
+                            <input type="radio" name="puntoEntrega" class="d-none" id="puntoBiblioteca">
+                            <div class="border rounded-3 p-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-circle mt-1 text-muted"></i>
+                                <div>
+                                    <span class="fw-semibold small">Biblioteca Pública Municipal "Camilo Vadillo Rivera"</span>
+                                    <p class="text-muted small mb-0">Calle 26 Centro, ideal para intercambios de libros en ambiente de estudio.</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="w-100" style="cursor:pointer;">
+                            <input type="radio" name="puntoEntrega" class="d-none" id="puntoEscuela">
+                            <div class="border rounded-3 p-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-circle mt-1 text-muted"></i>
+                                <div>
+                                    <span class="fw-semibold small">Entrada principal de la escuela (CBTIS 120)</span>
+                                    <p class="text-muted small mb-0">Al salir de clases por la puerta de acceso peatonal.</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="w-100" style="cursor:pointer;">
+                            <input type="radio" name="puntoEntrega" class="d-none" id="puntoParque">
+                            <div class="border rounded-3 p-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-circle mt-1 text-muted"></i>
+                                <div>
+                                    <span class="fw-semibold small">Parque del Barrio de San Juan / San Sebastián</span>
+                                    <p class="text-muted small mb-0">Kiosco central o frente a la cancha deportiva techada.</p>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="w-100" style="cursor:pointer;">
+                            <input type="radio" name="puntoEntrega" class="d-none" id="puntoOtro">
+                            <div class="border rounded-3 p-3 d-flex align-items-start gap-2">
+                                <i class="bi bi-circle mt-1 text-muted"></i>
+                                <div>
+                                    <span class="fw-semibold small"><i class="bi bi-record-circle" style="color:#e76f51;"></i> Otro punto convenido por mensaje interno</span>
+                                    <p class="text-muted small mb-0">Siempre te recomendamos que sea un espacio público céntrico.</p>
+                                </div>
+                            </div>
+                        </label>
+
+                    </div>
+
+                    <div class="border-top pt-3">
+                        <label class="form-label small fw-semibold d-block">Horarios de preferencia para la entrega</label>
+                        <div class="d-flex flex-wrap gap-4 mt-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="horarioManana" checked>
+                                <label class="form-check-label small" for="horarioManana">Mañanas (9:00 - 11:30 am)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="horarioMediodia" checked>
+                                <label class="form-check-label small" for="horarioMediodia">Mediodía (1:00 - 2:30 pm)</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="horarioTarde">
+                                <label class="form-check-label small" for="horarioTarde">Tardes (5:00 - 7:00 pm)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Columna derecha: vista previa -->
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm p-3">
+                    <p class="fw-bold small mb-2" style="color:#52b788;">VISTA PREVIA COMUNITARIA</p>
+                    <div class="position-relative mb-2">
+                        <img src="../img/publicar/libro.jpg" class="w-100 rounded-3" style="height:150px; object-fit:cover;" alt="Vista previa">
+                        <span class="badge position-absolute top-0 end-0 m-2" style="background-color:#52b788;">Trueque</span>
+                    </div>
+                    <p class="small text-muted mb-1">CBTIS 120 • TICUL</p>
+                    <h6 class="fw-bold mb-1">4 Libros de Literatura II</h6>
+                    <p class="small text-muted">Busco: Libro de Física I o libretas cuadro grande.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Botones de navegación / acción final -->
+        <div class="d-flex justify-content-between align-items-center mt-4">
+            <a href="index.html" class="text-decoration-none small fw-semibold" style="color:#555;">
+                <i class="bi bi-arrow-left me-1"></i>Cancelar
+            </a>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="#" class="text-decoration-none small">Guardar como borrador</a>
+                <button class="btn text-white" style="background-color:#1b4332;">
+                    <i class="bi bi-wifi me-1"></i>Publicar artículo ahora
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="contacto" style="background-color:#f3f4f1;" class="pt-5 pb-4 border-top">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Columna 1: Marca -->
+                <div class="col-md-3">
+                    <h5 class="d-flex align-items-center gap-2 fw-bold" style="color:#1b4332;">
+                        <i class="bi bi-book-half" style="color:#52b788;"></i>
+                        <span>LibroLibre</span>
+                    </h5>
+                    <p class="text-muted small mt-2">
+                        Red Comunitaria de Economía Circular Educativa en Yucatán. Facilitando el intercambio digno, donación y reutilización de útiles, uniformes y libros escolares.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Municipios conectados -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-2" style="color:#1b4332;">Municipios Conectados</h6>
+                    <p class="text-muted small mb-3">Cobertura activa en la región sur del Mayab:</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge rounded-pill border text-dark bg-white">Ticul</span>
+                        <span class="badge rounded-pill border text-dark bg-white">Yotholín</span>
+                        <span class="badge rounded-pill border text-dark bg-white">Pustunich</span>
+                        <span class="badge rounded-pill border text-dark bg-white">Oxkutzcab</span>
+                        <span class="badge rounded-pill border text-dark bg-white">Dzan</span>
+                        <span class="badge rounded-pill border text-dark bg-white">Sacalum</span>
+                        <span class="badge rounded-pill border text-dark bg-white">Santa Elena</span>
+                    </div>
+                </div>
+
+                <!-- Columna 3: Puntos seguros -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color:#1b4332;">Puntos Seguros en Ticul</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color:#52b788;"></i>Plaza Principal (frente a Palacio Municipal)</li>
+                        <li class="mb-2"><i class="bi bi-building me-2" style="color:#52b788;"></i>Biblioteca Municipal Camilo Vadillo</li>
+                        <li class="mb-2"><i class="bi bi-tree-fill me-2" style="color:#52b788;"></i>Parque de San Juan (kiosco central)</li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="col-md-3">
+                    <h6 class="fw-bold text-uppercase mb-3" style="color:#1b4332;">Contacto</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill me-2" style="color:#52b788;"></i>
+                            <a href="mailto:librolibre123@gmail.com" class="text-decoration-none text-dark">librolibre123@gmail.com</a>
+                        </li>
+                        <li class="mb-2"><i class="bi bi-question-circle-fill me-2" style="color:#52b788;"></i>Preguntas Frecuentes</li>
+                        <li class="mb-2"><i class="bi bi-shield-check me-2" style="color:#52b788;"></i>Seguridad y Entrega Segura</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  </head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="barra-superior d-flex align-items-center px-4">
+    <img src="../img/BanerSimple.jpg" alt="Logo" height="120">
+
+    <div class="input-group ms-4" style="max-width: 500px;">
+        <input type="text" class="form-control" placeholder="Buscar productos, artículos y más...">
+    </div>
+
+    <ul class="navbar-nav flex-row gap-4 ms-4 mb-0">
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex align-items-center gap-1" href="ejemplo.html">
+            <i class="bi bi-house-door"></i> Inicio
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex align-items-center gap-1" href="#">
+            <i class="bi bi-journal-bookmark"></i> Catálogo Escolar
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex align-items-center gap-1" href="publicar.html">
+            <i class="bi bi-plus-circle"></i> Publicar Material
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex align-items-center gap-1" href="#">
+            <i class="bi bi-bag-check"></i> Mis Tratos
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-white d-flex align-items-center gap-1" href="#">
+            <i class="bi bi-person-circle"></i> Mi Perfil
+        </a>
+    </li>
+</ul>
+</div>
+
+    <main>
+
+      <div class="w-100 sticky-top" style="top:0; z-index:1020;">
+  <div class="d-flex flex-wrap justify-content-center gap-2 gap-md-4 py-2 px-3"
+       style="background-color:#f3f4f1; border-bottom:1px solid #d8ded9;">
+    <a href="#inicio" class="text-decoration-none fw-semibold small" style="color:#1b4332;">Inicio</a>
+    <a href="#impacto" class="text-decoration-none fw-semibold small" style="color:#1b4332;">Impacto Colectivo</a>
+    <a href="#como-funciona" class="text-decoration-none fw-semibold small" style="color:#1b4332;">Cómo Funciona</a>
+    <a href="#contacto" class="text-decoration-none fw-semibold small" style="color:#1b4332;">Contacto</a>
+  </div>
+</div>
+
+      <!-- carrusel -->
+
+      <section id="inicio" class="container-fluid px-4 py-5">
+  <div class="row align-items-center g-4 p-4 rounded-4" style="background-color:#f3f4f1; border:1px solid #d8ded9;">
+
+    <!-- Columna izquierda: texto -->
+    <div class="col-lg-6">
+      <h1 class="fw-bold mb-3" style="color:#1b4332;">
+        Dale una segunda vida a los útiles y libros escolares de tus hijos
+      </h1>
+      <p class="text-muted mb-4">
+        Conecta con familias de <strong>Ticul, Yotholín, Pustunich, Oxkutzcab, Dzan y Sacalum</strong>
+        para intercambiar, donar o adquirir uniformes, libros de texto y útiles a precios solidarios.
+        Cuidemos juntos el bolsillo y la educación de nuestros estudiantes.
+      </p>
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="#" class="btn btn-lg text-white" style="background-color:#1b4332;">
+          <i class="bi bi-plus-circle me-2"></i>Publicar mi material gratis
+        </a>
+        <a href="#" class="btn btn-lg btn-light border">
+          <i class="bi bi-search me-2"></i>Explorar catálogo de la región
+        </a>
+      </div>
+    </div>
+
+    <!-- Columna derecha: carrusel -->
+    <div class="col-lg-6">
+      <div id="carruselHero" class="carousel slide rounded-4 overflow-hidden shadow-sm" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <img src="../img/usos/carru1.jpg" class="d-block w-100" alt="Impacto real 1" style="height:340px; object-fit:cover;">
+            <div class="carousel-caption text-start" style="background:rgba(27,67,50,.75); border-radius:10px; left:1rem; right:1rem; bottom:1rem; padding:.8rem 1rem;">
+              <span class="badge mb-1" style="background-color:#52b788;">TICUL</span>
+              <h6 class="fw-bold mb-1">Doña Carmen e Inés en el Cobay de Ticul</h6>
+              <p class="small mb-0">"Intercambiamos los libros de 1° por los de 2° de prepa sin gastar un peso."</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../img/usos/carru2.jpg" class="d-block w-100" alt="Impacto real 2" style="height:340px; object-fit:cover;">
+            <div class="carousel-caption text-start" style="background:rgba(27,67,50,.75); border-radius:10px; left:1rem; right:1rem; bottom:1rem; padding:.8rem 1rem;">
+              <span class="badge mb-1" style="background-color:#52b788;">OXCUTZCAB</span>
+              <h6 class="fw-bold mb-1">Otra historia de tu comunidad</h6>
+              <p class="small mb-0">Uniformes en el ITSSY</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../img/usos/carru3.jpg" class="d-block w-100" alt="Impacto real 3" style="height:340px; object-fit:cover;">
+            <div class="carousel-caption text-start" style="background:rgba(27,67,50,.75); border-radius:10px; left:1rem; right:1rem; bottom:1rem; padding:.8rem 1rem;">
+              <span class="badge mb-1" style="background-color:#52b788;">pustucich</span>
+              <h6 class="fw-bold mb-1">Otra historia de tu comunidad</h6>
+              <p class="small mb-0">escuela primaria de pustucich</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="../img/usos/carru4.jpg" class="d-block w-100" alt="Impacto real 4" style="height:340px; object-fit:cover;">
+            <div class="carousel-caption text-start" style="background:rgba(27,67,50,.75); border-radius:10px; left:1rem; right:1rem; bottom:1rem; padding:.8rem 1rem;">
+              <span class="badge mb-1" style="background-color:#52b788;">sacalum</span>
+              <h6 class="fw-bold mb-1">Otra historia de tu comunidad</h6>
+              <p class="small mb-0">Venta de utiles escolares a bajo precio</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carruselHero" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carruselHero" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Tarjetas de impacto -->
+
+<section id="impacto" class="container-fluid px-4 py-5">
+
+  <div class="row mb-4">
+    <div class="col-lg-6">
+      <p class="fw-bold small mb-1" style="color:#52b788; letter-spacing:.5px;">
+        CUENTAS CLARAS Y FRATERNIDAD
+      </p>
+      <h2 class="fw-bold" style="color:#1b4332;">Impacto Colectivo en la Región Sur</h2>
+    </div>
+    <div class="col-lg-6 d-flex align-items-center">
+      <p class="text-muted mb-0">
+        Cada libro que pasa de mano en mano significa una familia con menos presión económica
+        y un árbol preservado en el Mayab.
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Tarjeta 1: Libros reutilizados -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="d-flex align-items-center justify-content-center rounded-3 mb-3"
+             style="width:48px; height:48px; background-color:#d7f2e3;">
+          <i class="bi bi-book" style="color:#1b4332; font-size:1.3rem;"></i>
+        </div>
+        <h2 class="fw-bold mb-0" style="color:#1b4332;">+1,420</h2>
+        <p class="fw-semibold mb-2">Libros Reutilizados</p>
+        <hr>
+        <p class="text-muted small mb-0">
+          Evitando la tala innecesaria y fomentando la lectura activa en Ticul y comisarías.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2: Pesos ahorrados -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="d-flex align-items-center justify-content-center rounded-3 mb-3"
+             style="width:48px; height:48px; background-color:#d7f2e3;">
+          <i class="bi bi-piggy-bank" style="color:#1b4332; font-size:1.3rem;"></i>
+        </div>
+        <h2 class="fw-bold mb-0" style="color:#1b4332;">$185,000</h2>
+        <p class="fw-semibold mb-2">Pesos Ahorrados (MXN)</p>
+        <p class="text-muted small mb-2">
+          Apoyo directo al gasto escolar de más de 650 hogares del cono sur yucateco.
+        </p>
+        
+      </div>
+    </div>
+
+    <!-- Tarjeta 3: Escuelas vinculadas -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="d-flex align-items-center justify-content-center rounded-3 mb-3"
+             style="width:48px; height:48px; background-color:#1b4332;">
+          <i class="bi bi-mortarboard" style="color:#fff; font-size:1.3rem;"></i>
+        </div>
+        <h2 class="fw-bold mb-0" style="color:#1b4332;">18</h2>
+        <p class="fw-semibold mb-2">Escuelas Vinculadas</p>
+        <p class="text-muted small mb-2">
+          Puntos de entrega seguros en accesos escolares, bibliotecas y plazas.
+        </p>
+        <span class="small fw-semibold" style="color:#52b788;">
+          <i class="bi bi-check-circle-fill me-1"></i>Validado por directivas
+        </span>
+      </div>
+    </div>
+
+    <!-- Tarjeta 4: Comunidades unidas -->
+    <div class="col-lg-3 col-md-6">
+      <div class="card h-100 border-0 shadow-sm p-3">
+        <div class="d-flex align-items-center justify-content-center rounded-3 mb-3"
+             style="width:48px; height:48px; background-color:#d7f2e3;">
+          <i class="bi bi-geo-alt" style="color:#1b4332; font-size:1.3rem;"></i>
+        </div>
+        <h2 class="fw-bold mb-0" style="color:#1b4332;">7</h2>
+        <p class="fw-semibold mb-2">Comunidades Unidas</p>
+        <hr>
+        <p class="text-muted small mb-0">
+          Ticul, Yotholín, Pustunich, Oxkutzcab, Dzan, Sacalum y Santa Elena conectadas en una sola red.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="como-funciona" class="container-fluid px-4 py-5" style="background-color:#e8e9f5;">
+
+  <div class="text-center mb-5">
+    <p class="fw-bold small mb-1" style="color:#52b788; letter-spacing:.5px;">
+      FÁCIL, SEGURO Y SOLIDARIO
+    </p>
+    <h2 class="fw-bold" style="color:#1b4332;">¿Cómo funciona LibroLibre en nuestra región?</h2>
+    <p class="text-muted mx-auto" style="max-width:600px;">
+      Diseñado para que cualquier madre, padre o estudiante pueda compartir materiales
+      escolares sin enredos ni costos de intermediación.
+    </p>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- Paso 1: Regístrate -->
+    <div class="col-lg-3 col-md-6">
+  <div class="card h-100 border-0 overflow-hidden" style="background-color:#dcdcf0;">
+    
+    <img src="../img/pasos/registro.jpg" class="card-img-top" alt="Regístrate" style="height:140px; object-fit:cover;">
+
+    <div class="card-body p-4">
+      <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 fw-bold text-white"
+           style="width:44px; height:44px; background-color:#1b4332; font-size:1.1rem;">
+        1
+      </div>
+      <h6 class="fw-bold mb-2" style="color:#1b4332;">Regístrate</h6>
+      <p class="text-muted small mb-3">
+        Crea tu cuenta con tu nombre, comunidad y nivel escolar de tus hijos.
+        Solo toma un minuto y no pedimos datos innecesarios.
+      </p>
+      <span class="small fw-semibold" style="color:#52b788;">
+        <i class="bi bi-person-check me-1"></i>Registro gratuito
+      </span>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Paso 2: Publica -->
+<div class="col-lg-3 col-md-6">
+  <div class="card h-100 border-0 overflow-hidden" style="background-color:#dcdcf0;">
+
+    <img src="../img/pasos/publi.jpg" class="card-img-top" alt="Publica en 2 minutos" style="height:140px; object-fit:cover;">
+
+    <div class="card-body p-4">
+      <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 fw-bold text-white"
+           style="width:44px; height:44px; background-color:#1b4332; font-size:1.1rem;">
+        2
+      </div>
+      <h6 class="fw-bold mb-2" style="color:#1b4332;">Publica en 2 minutos</h6>
+      <p class="text-muted small mb-3">
+        Toma fotos claras con tu celular o computadora. Indica el grado escolar,
+        la escuela y si lo donas gratis, buscas un trueque por otro material o pides
+        una cuota simbólica.
+      </p>
+      <span class="small fw-semibold" style="color:#52b788;">
+        <i class="bi bi-camera me-1"></i>Sin trámites complicados
+      </span>
+    </div>
+
+  </div>
+</div>
+
+<!-- Paso 3: Acuerda -->
+<div class="col-lg-3 col-md-6">
+  <div class="card h-100 border-0 overflow-hidden" style="background-color:#dcdcf0;">
+
+    <img src="../img/pasos/acuerdo.jpg" class="card-img-top" alt="Acuerda con otra familia" style="height:140px; object-fit:cover;">
+
+    <div class="card-body p-4">
+      <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 fw-bold text-white"
+           style="width:44px; height:44px; background-color:#1b4332; font-size:1.1rem;">
+        3
+      </div>
+      <h6 class="fw-bold mb-2" style="color:#1b4332;">Acuerda con otra familia</h6>
+      <p class="text-muted small mb-3">
+        Comunícate por el chat seguro interno sin compartir tu número personal hasta
+        que estés listo. Resuelve dudas sobre la talla del uniforme o el estado de los libros.
+      </p>
+      <span class="small fw-semibold" style="color:#52b788;">
+        <i class="bi bi-chat-dots me-1"></i>Comunidad vecinal respetuosa
+      </span>
+    </div>
+
+  </div>
+</div>
+
+<!-- Paso 4: Entrega -->
+<div class="col-lg-3 col-md-6">
+  <div class="card h-100 border-0 overflow-hidden" style="background-color:#dcdcf0;">
+
+    <img src="../img/pasos/entrega.jpg" class="card-img-top" alt="Entrega en Puntos Seguros" style="height:140px; object-fit:cover;">
+
+    <div class="card-body p-4">
+      <div class="d-flex align-items-center justify-content-center rounded-3 mb-3 fw-bold text-white"
+           style="width:44px; height:44px; background-color:#1b4332; font-size:1.1rem;">
+        4
+      </div>
+      <h6 class="fw-bold mb-2" style="color:#1b4332;">Entrega en Puntos Seguros</h6>
+      <p class="text-muted small mb-3">
+        Encuéntrense en los puntos oficiales recomendados: Bajos del Palacio Municipal
+        de Ticul, la Biblioteca Camilo Vadillo o a la salida de las escuelas aliadas
+        durante el día.
+      </p>
+      <span class="small fw-semibold" style="color:#52b788;">
+        <i class="bi bi-geo-alt me-1"></i>Tranquilidad y luz de día
+      </span>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+</section>
+
+
+
+
+    </main>
+
+    <footer id="contacto" style="background-color:#f3f4f1;" class="pt-5 pb-4 border-top">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- Columna 1: Marca -->
+      <div class="col-md-3">
+        <h5 class="d-flex align-items-center gap-2 fw-bold" style="color:#1b4332;">
+          
+          <li class="mb-2"><i class="bi bi-book-half me-2" style="color:#52b788;"></i>LibroLibre</li>
+        </h5>
+        <p class="text-muted small mt-2">
+          Red Comunitaria de Economía Circular Educativa en Yucatán. Facilitando el intercambio digno, donación y reutilización de útiles, uniformes y libros escolares.
+        </p>        
+      </div>
+
+      <!-- Columna 2: Municipios conectados -->
+      <div class="col-md-3">
+        <h6 class="fw-bold text-uppercase mb-2" style="color:#1b4332;">Municipios Conectados</h6>
+        <p class="text-muted small mb-3">Cobertura activa en la región sur del Mayab:</p>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge rounded-pill border text-dark bg-white">Ticul</span>
+          <span class="badge rounded-pill border text-dark bg-white">Yotholín</span>
+          <span class="badge rounded-pill border text-dark bg-white">Pustunich</span>
+          <span class="badge rounded-pill border text-dark bg-white">Oxkutzcab</span>
+          <span class="badge rounded-pill border text-dark bg-white">Dzan</span>
+          <span class="badge rounded-pill border text-dark bg-white">Sacalum</span>
+          <span class="badge rounded-pill border text-dark bg-white">Santa Elena</span>
+        </div>
+      </div>
+
+      <!-- Columna 3: Puntos seguros -->
+      <div class="col-md-3">
+        <h6 class="fw-bold text-uppercase mb-3" style="color:#1b4332;">Puntos Seguros en Ticul</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><i class="bi bi-geo-alt-fill me-2" style="color:#52b788;"></i>Plaza Principal (frente a Palacio Municipal)</li>
+          <li class="mb-2"><i class="bi bi-building me-2" style="color:#52b788;"></i>Biblioteca Municipal Camilo Vadillo</li>
+          <li class="mb-2"><i class="bi bi-tree-fill me-2" style="color:#52b788;"></i>Parque de San Juan (kiosco central)</li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto -->
+      <div class="col-md-3">
+        <h6 class="fw-bold text-uppercase mb-3" style="color:#1b4332;">Contacto</h6>
+        <ul class="list-unstyled small">
+          <li class="mb-2">
+            <i class="bi bi-envelope-fill me-2" style="color:#52b788;"></i>
+            <a href="mailto:librolibre123@gmail.com" class="text-decoration-none text-dark">librolibre123@gmail.com</a>
+          </li>
+          <li class="mb-2"><i class="bi bi-question-circle-fill me-2" style="color:#52b788;"></i>Preguntas Frecuentes</li>
+          <li class="mb-2"><i class="bi bi-shield-check me-2" style="color:#52b788;"></i>Seguridad y Entrega Segura</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>
